@@ -4,6 +4,9 @@
 user_input = float(input("Enter the number of seconds: "))
 
 # Converting the seconds to days, hours, and minutes
+
+# We use the floor division method to divide and round the number of days to the closest integer
+# We then do a modulo division to work on the remaining number of seconds
 days = int(user_input // (3600 * 24))
 user_input %= (3600 * 24)
 
